@@ -1,3 +1,3 @@
 # Lyrics-Generation
 
-Developing a neural language model to generate song lyrics given some context.
+Developing a neural language model to generate lyrics for English rock songs.
