@@ -12,7 +12,6 @@ def main():
     print("\nTotal lines ", len(all_lines))
 
     random.shuffle(all_lines)
-    print("\nTotal lines ", len(all_lines))
 
     train_lines = all_lines[:int(0.8 *len(all_lines))]
     val_lines = all_lines[int(0.8 * len(all_lines)):int(0.9 * len(all_lines))]

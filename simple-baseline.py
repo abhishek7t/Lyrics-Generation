@@ -1,11 +1,11 @@
-
 import csv
 import random
+import argparse
 
-def main():
+def main(args):
     all_lines = []
     all_pairs = []
-    with open('data/english_rock.csv', encoding='utf8') as csv_file:
+    with open(args.datafile, encoding='utf8') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
             lines = row['lyrics'].split('\n')
@@ -30,7 +30,10 @@ def main():
         for line1, line2 in sampled_data_y.items():
             file.write(f'{line1}\t{line2}\n')
 
-
-
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('--datafile', type=str, required=True)
+
+    args = parser.parse_args()
+    main(args)
