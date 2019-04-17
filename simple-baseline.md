@@ -6,9 +6,10 @@ The ground truth sequences are stored in a file named 'goldfile', while the pred
 
 For the test data ('test_rock.csv'), we get the 'goldfile' and 'predfile' files. A few sample predictions are shown below. The first column is the first lyric, the second column is the true next lyric and the last column is the predicted next lyric:
 
-**First_Lyric   Second_Lyric_True   Second_Lyric_Predicted**<br>
-*Been screamin' out your name,   I wake up in a sweat,   In fact I think I wish you would*<br>
-*Make my dad pay the bill   Yeah man, that's heaven to me   I deserve this!*<br>
-*Now I'm the invisible man  My head is spinning round faster and faster 'Cause I got voices down inside me,*<br>
+| First_Lyric                   | Second_Lyric_True                           | Second_Lyric_Predicted              |
+|-------------------------------|---------------------------------------------|-------------------------------------|
+| Been screamin' out your name, | I wake up in a sweat,                       | In fact I think I wish you would    |
+| Make my dad pay the bill      | Yeah man, that's heaven to me               | I deserve this!                     |
+| Now I'm the invisible man     | My head is spinning round faster and faster | 'Cause I got voices down inside me, |
 
 Running the evaluation script 'scoring.py' with these ground truth and prediction files as inputs, we get an Accuracy of 0.11 and a BLEU score of 0.11.
