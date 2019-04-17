@@ -45,7 +45,6 @@ def main(args):
     print(f'Accuracy: {accuracy(gold, pred):.2f}')
     print(f'BLEU score: {bleuScore(gold, pred):.2f}')
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
